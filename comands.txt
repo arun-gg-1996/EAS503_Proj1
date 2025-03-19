@@ -1,0 +1,1 @@
+python update_financials.py ./save_data/player_analysis_data.xlsx --test --batch-size 50 --parallel 10

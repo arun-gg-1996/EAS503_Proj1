@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Specific Football Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .header {
+            background: #1e3a8a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #38bdf8 3px solid;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .visualization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .visualization-card {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .visualization-card:hover {
+            transform: scale(1.05);
+        }
+        .visualization-card a {
+            text-decoration: none;
+            color: #0369a1;
+            font-weight: bold;
+        }
+        .category-section {
+            margin-top: 30px;
+            padding: 15px;
+            background: #e9e9e9;
+            border-radius: 5px;
+        }
+        .category-section h2 {
+            border-bottom: 2px solid #0369a1;
+            padding-bottom: 10px;
+            color: #333;
+        }
+        .position-section {
+            margin-top: 20px;
+            background: #f0f9ff;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .position-section h3 {
+            color: #0369a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Position-Specific Football Analysis</h1>
+    </div>
+
+    <div class="container">
+    
+        <div class="category-section">
+            <h2>Position Embeddings (t-SNE)</h2>
+            <div class="visualization-grid">
+    
+                    <div class='visualization-card'>
+                        <a href="players_3d_tsne.html" target="_blank">3D Player Similarity Map (t-SNE)</a>
+                    </div>
+                
+                </div>
+            </div>
+        
+        <div class="category-section">
+            <h2>Defense Position Analysis</h2>
+        
+            <div class="position-section">
+                <h3>LCB</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_LCB.html" target="_blank">Top 10 Players for LCB</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_LCB.html" target="_blank">Radar Chart - Top 3 Players for LCB</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>CB</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_CB.html" target="_blank">Top 10 Players for CB</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_CB.html" target="_blank">Radar Chart - Top 3 Players for CB</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>RCB</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_RCB.html" target="_blank">Top 10 Players for RCB</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_RCB.html" target="_blank">Radar Chart - Top 3 Players for RCB</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>LWB</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_LWB.html" target="_blank">Top 10 Players for LWB</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_LWB.html" target="_blank">Radar Chart - Top 3 Players for LWB</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>RWB</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_RWB.html" target="_blank">Top 10 Players for RWB</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_RWB.html" target="_blank">Radar Chart - Top 3 Players for RWB</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="category-section">
+            <h2>Midfield Position Analysis</h2>
+        
+            <div class="position-section">
+                <h3>LCM</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_LCM.html" target="_blank">Top 10 Players for LCM</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_LCM.html" target="_blank">Radar Chart - Top 3 Players for LCM</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>RCM</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_RCM.html" target="_blank">Top 10 Players for RCM</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_RCM.html" target="_blank">Radar Chart - Top 3 Players for RCM</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>CAM</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_CAM.html" target="_blank">Top 10 Players for CAM</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_CAM.html" target="_blank">Radar Chart - Top 3 Players for CAM</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="category-section">
+            <h2>Forward Position Analysis</h2>
+        
+            <div class="position-section">
+                <h3>LW</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_LW.html" target="_blank">Top 10 Players for LW</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_LW.html" target="_blank">Radar Chart - Top 3 Players for LW</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>RW</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_RW.html" target="_blank">Top 10 Players for RW</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_RW.html" target="_blank">Radar Chart - Top 3 Players for RW</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="position-section">
+                <h3>ST</h3>
+                <div class="visualization-grid">
+            
+                    <div class='visualization-card'>
+                        <a href="top_10_ST.html" target="_blank">Top 10 Players for ST</a>
+                    </div>
+                    
+                    <div class='visualization-card'>
+                        <a href="radar_ST.html" target="_blank">Radar Chart - Top 3 Players for ST</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="category-section">
+            <h2>Versatility Analysis</h2>
+            <div class="visualization-grid">
+    
+            <div class='visualization-card'>
+                <a href="versatility_top20.html" target="_blank">Top 20 Most Versatile Players</a>
+            </div>
+            
+            </div>
+        </div>
+    
+        <div class="category-section">
+            <h2>Statistical Leaders</h2>
+            <div class="visualization-grid">
+    
+            <div class='visualization-card'>
+                <a href="enhanced_stat_leaderboards.html" target="_blank">Key Statistic Leaderboards (with Assists)</a>
+            </div>
+            
+            <div class='visualization-card'>
+                <a href="enhanced_per90_stat_leaderboards.html" target="_blank">Per 90 Minutes Stat Leaderboards (with Assists/90)</a>
+            </div>
+            
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
