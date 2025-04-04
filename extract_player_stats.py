@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-# Import custom modules (these would be local imports in your actual codebase)
 from league import get_league_id
 from player_data import get_players
 from score_calculator import POSITION_WEIGHTS, calculate_position_scores
